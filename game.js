@@ -1,19 +1,21 @@
 document.addEventListener('DOMContentLoaded', ()  => {
 
 var walls = document.getElementsByClassName('boundary');
-
 var end_button = document.getElementById('end')
 var start_button = document.getElementById('start')
 var text = document.getElementById('status')
 var score = document.getElementsByClassName('example')[0]
-score_calculation = 0
-start_button.addEventListener('mouseover', start)
+var score_calculation = 0
 
+start_button.addEventListener('mouseover', start)
+score.style.textAlign = "center"
 function start(){
 for (var i = 0 ; i < walls.length-1 ; i++) {
      walls[i].addEventListener('mouseover', youLost)
 }
+
 end_button.addEventListener('mouseover', youWin)
+
 for (var i = 0 ; i < walls.length-1 ; i++){
     walls[i].classList.remove('youlose')
 }
