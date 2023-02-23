@@ -14,6 +14,9 @@ for (var i = 0 ; i < walls.length-1 ; i++) {
      walls[i].addEventListener('mouseover', youLost)
 }
 end_button.addEventListener('mouseover', youWin)
+for (var i = 0 ; i < walls.length-1 ; i++){
+    walls[i].classList.remove('youlose')
+}
 }
 
 function youLost() {
@@ -28,7 +31,6 @@ function youLost() {
 function youWin(){
     text.innerHTML = "You Won";
     score_calculation +=5
-    score.innerHTML.style.text-align.center 
     score.innerHTML = score_calculation
 }
 
