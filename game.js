@@ -17,7 +17,7 @@ for (var i = 0 ; i < walls.length-1 ; i++) {
 }
 
 end_button.addEventListener('mouseover', youWin);
-
+text.innerHTML = "Begin by moving your mouse over the S";
 }
 
 function youLost() {
@@ -51,7 +51,7 @@ function restart(){
     end_button.addEventListener('mouseover', youWin);
     score_calculation = 0;
     score.innerHTML = score_calculation;
-
+    text.innerHTML="Begin by moving your mouse over the S";
 }
 
 
